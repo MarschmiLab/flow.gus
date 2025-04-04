@@ -1,12 +1,12 @@
 Package: fun.gus
 Type: Package
 Title: Functions Gus wrote to help with Schmidt Lab data analysis
-Version: 0.4.5.2
+Version: 0.1.0
 Author: Augustus Pendleton
-Description: A collection of functions that I use a lot
+Description: A collection of functions for analyzing flow data
 License: `use_mit_license()`
 Encoding: UTF-8
-Imports: magrittr, dplyr, tidyr, lubridate, readr, stringr, purrr, rlang, shiny, DT, data.table, furrr, future, abind, phyloseq, flowCore, hillR, extraDistr
+Imports: magrittr, dplyr, stringr, purrr, shiny, flowCore, ggplot2, tibble
 LazyData: true
 RoxygenNote: 7.2.3
 Roxygen: list(markdown = TRUE)

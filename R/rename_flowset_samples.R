@@ -4,7 +4,6 @@
 #' @param flo_set A flow set produced using `flowCore::read.flowSet()`
 #' @returns Opens a a shiny app where you can interactively define gates and export them as an .RData object.
 #'
-#' @importFrom flowCore sampleNames pData
 #'
 #' @export
 rename_flowset_samples <- function(flo_set, new_names){
