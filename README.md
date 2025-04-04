@@ -5,8 +5,13 @@ An R package with functions Gus has written to help analyze flow data.
 # To install:
 
 ```         
-if (!requireNamespace("devtools", quietly=TRUE))
+if (!requireNamespace("devtools", quietly=TRUE)){
     install.packages("devtools")
+    }
+if (!requireNamespace("flowCore", quietly=TRUE)){
+    install.packages("BiocManager")
+    BiocManager::install("flowCore")
+    }
 devtools::install_github("MarschmiLab/flow.gus")
 ```
 
