@@ -1,7 +1,7 @@
 Package: flow.gus
 Type: Package
 Title: Functions Gus wrote to help with Schmidt Lab data analysis
-Version: 0.1.1
+Version: 0.1.2
 Author: Augustus Pendleton
 Description: A collection of functions for analyzing flow data
 License: `use_mit_license()`

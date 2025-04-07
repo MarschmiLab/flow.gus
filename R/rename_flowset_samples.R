@@ -1,8 +1,9 @@
-#' Interactively Define Gates for Flow Cytometry Flow Set
+#' Rename the "name" variable within a flowset
 #'
-#' This function launches a Shiny app wherein you can interactively define gates for a flow cytometry flow set. Produce your flowset using flowCore::read.flowSet(). Use drop-down menus to select axes for your plots. Click on the plots to draw your gate. Use the Remove Point button to remove vertices, in reverse order that you created them. The Gate Name text input will determine the name of the polygon gate you will create; as such it must follow R guidelines for naming objects. Use Export button to save the gave as an .RData file, which will create a polygonGate as defined by flowCore.
+#' A minor annoyance is specifying clean names for plotting many samples within a flowset. This simplifies the process.
 #' @param flo_set A flow set produced using `flowCore::read.flowSet()`
-#' @returns Opens a a shiny app where you can interactively define gates and export them as an .RData object.
+#' @param new_names A character vector of new sample names, of the same length as your flow set
+#' @returns A flow set with updated names.
 #'
 #'
 #' @export

@@ -17,7 +17,7 @@ count_gated_events <- function(flo_set, gate){
                  percent = x@p)
     })
 
-    res_df$sample <- names(summaries)
+    res_df$sample <- flowCore::pData(flo_set)$name
 
     return(res_df)
 
