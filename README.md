@@ -15,6 +15,16 @@ if (!requireNamespace("flowCore", quietly=TRUE)){
 devtools::install_github("MarschmiLab/flow.gus")
 ```
 
+If this doesn't work, don't worry. Installing flow.gus can be frustrating due to underlying dependencies. The above worked on my personal laptop, but the below is what I needed to do for the server:
+
+```
+devtools::install_github('RGLab/cytoinstaller', force=TRUE)
+devtools::install_github("RGLab/RProtoBufLib")
+devtools::install_github("RGLab/cytolib")
+devtools::install_github("RGLab/flowCore")
+devtools::install_github("MarschmiLab/flow.gus")
+```
+
 # Flow Cytometry Functions
 
 As our lab uses more and more flow cytometry, there are some basic tasks that I prefer to do with previously defined convenience functions, which almost exclusively wrap functions from the flowCore function.
